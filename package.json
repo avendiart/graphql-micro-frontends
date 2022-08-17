@@ -1,0 +1,17 @@
+{
+  "name": "mono-modules",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "turbo run build",
+    "prettier-check": "prettier --check '**/*.{js,ts,jsx,tsx,css,json,md,yml,yaml}'",
+    "prettier-write": "prettier --write '**/*.{js,ts,jsx,tsx,css,json,md,yml,yaml}'",
+    "watch": "turbo run watch"
+  },
+  "devDependencies": {
+    "prettier": "^2.7.1",
+    "turbo": "^1.4.3"
+  }
+}
